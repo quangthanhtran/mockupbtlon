@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/wowfood.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body>
+    !-- section header start -->
+    <section class="header">
+        <div class="header__navbar wide" >
+            <div class="header__navbar-logo">
+                <img src="img/logo.png" alt="" class="header__navbar-logo-img">
+            </div>
+            <label for="header__navbar-mobile-input" class="header__navbar-btn-mobile">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" name="" class="header__navbar-input" id="header__navbar-mobile-input">
+            <label for="header__navbar-mobile-input" class="header__navbar-overlay"></label>
+            <div class="header__navbar-menu-mobile text-right">
+                <label for="header__navbar-mobile-input" class="header__navbar-close">
+                    <i class="fas fa-times"></i>
+                </label>
+                <ul class="header__navbar-menu-mobile-list">
+                    <li class="header__navbar-menu-mobile-list-iteam">
+                        <a href="wowfood.html" class="header__navbar-menu-mobile-list-iteam-link">Home</a>
+                    </li>
+                    <li class="header__navbar-menu-mobile-list-iteam">
+                        <a href="categories.html" class="header__navbar-menu-mobile-list-iteam-link">Categorieszz</a>
+                    </li>
+                    <li class="header__navbar-menu-mobile-list-iteam">
+                        <a href="foodmenu.html" class="header__navbar-menu-mobile-list-iteam-link">Foods</a>    
+                    </li>
+                    <li class="header__navbar-menu-mobile-list-iteam">
+                        <a href="" class="header__navbar-menu-mobile-list-iteam-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__navbar-menu text-right">
+                <ul class="header__navbar-menu-list">
+                    <li class="header__navbar-menu-list-iteam">
+                        <a href="wowfood.php" class="header__navbar-menu-list-iteam-link">Home</a>
+                    </li>
+                    <li class="header__navbar-menu-list-iteam">
+                        <a href="food-menu-chuyen-muc.php" class="header__navbar-menu-list-iteam-link">Categories</a>
+                    </li>
+                    <li class="header__navbar-menu-list-iteam header__navbar-menu-list-iteam--has-food">
+                        <a href="foodmenu.html" class="header__navbar-menu-list-iteam-link">Foods</a>
+                        <div class="header__navbar-sub-food">
+                            <ul class="header__navbar-sub-food-list">
+                                <li class="header__navbar-sub-food-list-iteam"><a href="food-menu-chuyen-muc?id=1" class="header__navbar-sub-food-link">Pizaa</a></li>
+                                <li class="header__navbar-sub-food-list-iteam"><a href="food-menu-chuyen-muc?id=2" class="header__navbar-sub-food-link">Burger</a></li>
+                                <li class="header__navbar-sub-food-list-iteam"><a href="food-menu-chuyen-muc?id=3" class="header__navbar-sub-food-link">Momo</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__navbar-menu-list-iteam">
+                        <a href="" class="header__navbar-menu-list-iteam-link">Contact</a>
+                    </li>
+                    <a href="cart.php" class="header__navbar-cart-link">
+                        <div class="header__navbar-icon">
+                         <i class="fas fa-shopping-cart header__navbar-icon-cart"></i>
+                        </div>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- section header end -->
+
+    <!-- section search start -->
+    <section class="search">
+        <div class="search__background">
+            <div class="search__iteam">
+                <input type="text" class="search__iteam-text" placeholder="Search for Food..">
+                <button class="search__iteam-btn">Search</button>
+            </div>
+        </div>
+    </section>
+    <!-- section search end -->
+    <section class="cart">
+        <div class="container__cart">
+            <h1 class="container__cart-title">Giỏ hàng</h1>
+            <table class="container__cart-table">
+                <tr>
+                    <th class="product__number">STT</th>
+                    <th class="product__name">Tên sản phẩm</th>
+                    <th class="product__img">Ảnh sản phẩm</th>
+                    <th class="product__price">Đơn giá</th>
+                    <th class="product__quantity">Số lượng</th>
+                    <th class="product__money">Thành tiền</th>
+                    <th class="product__delete">Xóa</th>
+                </tr>  
+                <tr class="product__list">           
+                    <td class="product__number">1</td>
+                    <td class="product__name">Pizza</td>
+                    <td class="product__img"><img src="img/pizza.jpg" alt="" class="container__card-img"></td>
+                    <td class="product__price">230.000</td>
+                    <td class="product__quantity">1</td>
+                    <td class="product__money"> 230.000</td>
+                    <td class="product__delete">Xóa</td> 
+                </tr>   
+                
+                <tr>
+                    <td class="product__number">&nbsp</td>
+                    <td class="product__name">Tổng tiền</td>
+                    <td class="product__img">&nbsp</td>
+                    <td class="product__price">&nbsp</td>
+                    <td class="product__quantity">&nbsp</td>
+                    <td class="product__money">230.000</td>
+                    <td class="product__delete">&nbsp</td>
+                </tr>
+            </table>
+            <div>
+                <input type="submit" name="update-click" value="Cập nhập" class="container__cart-update">
+            </div>
+            <div class="container__cart-footer">
+                <div class="container__cart-footer-setting"><label>Người nhận: </label><input type="text" value="" name="name" class="container__cart-footer-input"></div>
+                <div class="container__cart-footer-setting"><label>Điện thoại: </label><input type="text" value="" name="phone" class="container__cart-footer-input container__cart-footer-input-setting1"></div>
+                <div class="container__cart-footer-setting"><label>Địa chỉ: </label><input type="text" value="" name="address" class="container__cart-footer-input container__cart-footer-input-setting2"></div>
+            </div>
+            <div class="order__container-confirm">
+                <input type="submit" name="order-click" value="Confirm Order" class="container__cart-confirm">
+            </div>
+        </div>    
+    </section>
+    <!-- section footer start -->
+    <section class="footer">
+        <div class="footer__icon">
+            <i class="fab fa-facebook footer__icon-setting"></i>
+            <i class="fab fa-instagram footer__icon-setting"></i>
+            <i class="fab fa-twitter footer__icon-setting"></i>
+        </div>
+        <div class="footer__text">
+            <p class="footer__text-setting">All rights reserved. Designed By <a href="" class="footer__text-link">Quang Thanh Tran</a></p>
+        </div>
+    </section>
+    <!-- section footer end -->
+</body>
+</html>

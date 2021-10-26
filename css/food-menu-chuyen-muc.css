@@ -1,0 +1,6 @@
+
+.container__box-price{font-size: 1.2rem;font-weight: 700;padding: 10px 0 16px 0;}
+.container__box-title-link{text-decoration: none;color: black;font-size: 1rem;font-weight: 700;}
+.container__box-title-link:hover{color: #f7a;}
+.container__box-setting{padding: 10px;z-index: -1;}
+.container__box-categories-text{bottom: 25px;position: absolute;left: 39%;font-size: 1.6rem;color: white;}.container__box-setting{padding: 10px;z-index: -1;}
